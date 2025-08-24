@@ -1,3 +1,4 @@
 # Oficina-API
 
-### Executar o código: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+## Exercícios Práticos: Construindo uma API com FastAPI:
+
