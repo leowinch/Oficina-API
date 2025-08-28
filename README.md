@@ -12,6 +12,8 @@ O objetivo é construir uma API funcional com FastAPI que interage com um servi�
 * O envio e recebimento de dados no formato `JSON`.
 * A criação de uma pequena "automação", onde sua API consome outra para realizar uma tarefa.
 
+## Dúvidas, enviar email: lwdallanora@inf.ufsm.br
+
 ### Construindo os Endpoints
 
 Vamos construir nossa API passo a passo, adicionando um endpoint de cada vez.
@@ -57,7 +59,33 @@ Para completar as operações básicas, vamos criar a função de deletar.
     ```bash
     uvicorn main:app --reload
     ```
+
 2.  **Acesse a Documentação Interativa:** Abra seu navegador e acesse a URL fornecida pelo Uvicorn, adicionando `/docs` ao final.
     * **Localmente:** `http://127.0.0.1:8000/docs`
+ 
     
-3.  **Teste cada Endpoint:** Use a interface do `/docs` para testar cada um dos endpoints que você criou e veja os resultados em tempo real!  
+3.  **Teste cada Endpoint:** Use a interface do `/docs` para testar cada um dos endpoints que você criou e veja os resultados em tempo real!
+
+    
+### Configurar Ambiente virtual para instalar bibliotecas (Linux)
+```bash
+python3 -m venv nome_ambiente_virtual
+```
+* Cuide se o seu python é o 3, caso não for modifique o comando!
+#### Entrar no ambiente virtual
+ ```bash
+ source nome_ambiente_virtual/bin/activate
+```
+
+#### Instalar bibliotecas
+ ```bash
+ pip install -r requirements.txt 
+```
+* Precisa ter o arquivo requiremenst.txt baixado
+* Agora é só executar o arquivo com o comando apresentado acima
+
+#### Sair do ambiaente virtual
+```bash
+ deactivate
+```
+
